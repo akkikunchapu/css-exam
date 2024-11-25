@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 500px) {
+            .gallery {
+                grid-template-columns: 2fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="C:\Users\rudhr\Downloads\watch2.png" alt="Placeholder Image 1">
+        <img src="C:\Users\rudhr\Downloads\watch1.png" alt="Placeholder Image 2">
+        <img src="C:\Users\rudhr\Downloads\img2.jpg" alt="Placeholder Image 3">
+        <img src="C:\Users\rudhr\Downloads\image2.jpg" alt="Placeholder Image 4">
+    </div>
+</body>
+</html>
